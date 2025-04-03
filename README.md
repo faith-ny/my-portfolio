@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Portfolio
 
 ## Description
@@ -23,3 +24,7 @@ Explore the sections to learn more about my background and projects.
 
 ## License
 This project is licensed under the MIT License.
+=======
+# my-portfolio
+a portfolio made using html,css and javascript
+>>>>>>> 7af3f63c20ae577954256db31b8bdd1abacb6967
