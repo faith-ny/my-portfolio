@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Faith.</a>
+        <nav class="navbar">
+            <a href="index.html"style='--i:1;' class="active">Home</a>
+            <a href="about.html" style='--i:2' >About</a>
+            <a href="skills.html" style='--i:3;'>Skills</a>
+            <a href="portfolio.html" style='--i:4;'>Portfolio</a>
+            <a href="contact.html" style='--i:5;'>Contact</a>
+        </nav>
+    </header>
+<section class="home">
+    <div class="home-content">
+        <h1>Hello, I'm Faith Nyambura</h1>
+        <h3>Software Developer</h3>
+        <p>I have developed my software developer skills through web development expertise as a committed professional.
+             Web applications that are responsive and user-friendly are among my development experiences as I use HTML, CSS and JavaScript. I want to use my fintech interest to develop advanced technology-based solutions which will improve financial service delivery.
+              I develop my skills in the tech field through regular learning so I can discover new tools that propel my growth.</p>
+        <div class="social-media">
+            <a href="https://web.facebook.com/faith.nyambura.906638/" target="_blank" style="--i:7">
+                <i class='bx bxl-facebook'> </i>
+            </a>
+            <a href="#" target="_blank" style="--i:8">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/faith-nyambura-23a30b27a/" target="_blank" style="--i:9">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+        </div> 
+        <a href="cv.pdf" class="btn" download>Download CV</a>
+    </div>
+    
+<div class="home-img">
+    <img src="new.jpeg" alt="">
+</div>
+</section>
+
+<script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.navbar a').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        window.location.href = this.getAttribute('href'); // If targetId is not found, navigate to new page
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
